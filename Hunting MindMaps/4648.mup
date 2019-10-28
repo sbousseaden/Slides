@@ -1,0 +1,503 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hunting with 4624/4625 [Logon/Logoff > Audit Logon ]",
+      "id": 1,
+      "attr": {
+        "position": [
+          -382.98828125,
+          -347.98828125,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FF9900"
+        }
+      },
+      "ideas": {
+        "0.5": {
+          "title": "Accounts Discovery",
+          "id": 5,
+          "attr": {
+            "position": [
+              109.00390625,
+              -81.015625,
+              5
+            ],
+            "style": {
+              "backgroundColor": "#99CC00"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "More than \"10\" EventID 4625 with different \"Account Name\" & Sub Status eq 0xc0000064 & SourceNetAddress not Null nor eq to \"-\" (user name does not exist)",
+              "id": 9,
+              "attr": {
+                "position": [
+                  78.015625,
+                  -101.9921875,
+                  1
+                ],
+                "style": {
+                  "width": 365.977
+                }
+              }
+            }
+          }
+        },
+        "-15.25": {
+          "title": "Suspicious Failed Logons",
+          "id": 2,
+          "attr": {
+            "position": [
+              183,
+              -101.75,
+              14
+            ],
+            "style": {
+              "backgroundColor": "#99CC00"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "More than 5 of EventID 4625 from same \"Source Network Address & unique \"Account Name\" and Sub Status eq \"0xC000006A\" & \"Account Name\" not like \"*$\"",
+              "id": 14,
+              "attr": {
+                "style": {
+                  "width": 303.988
+                }
+              }
+            },
+            "2": {
+              "title": "More than 20 of EventID 4625 & Same \"Account Name\" & logn_type in (3, 10) & Same \"Network Address\" & \"Account Name\" not like \"*$\"",
+              "id": 15,
+              "attr": {
+                "style": {
+                  "width": 304.98
+                }
+              }
+            },
+            "3": {
+              "title": "More than 2 EventID 4625 and different \"Account Name\" and \"Account Name\" in (Privileged Accounts List i.e. Domain Admin, Exchange Admins, SCCM Admins etc.)",
+              "id": 16,
+              "attr": {
+                "style": {
+                  "width": 287.992
+                }
+              }
+            },
+            "4": {
+              "title": "4625 with logon type in (3, 10) and \"Source NEtwork Address\" is Null or eq to \"-\" and \"Account Name\" not like \"*$\"",
+              "id": 18,
+              "attr": {
+                "style": {
+                  "width": 364.984
+                }
+              }
+            },
+            "5": {
+              "title": "4625 with logon_type 10  or 3 and both Source & Destination are EndUser Machines",
+              "id": 19
+            }
+          }
+        },
+        "0.125": {
+          "title": "Suspicious Successful Logons",
+          "id": 4,
+          "ideas": {
+            "1": {
+              "title": "Interactive Logon from a Service Account",
+              "id": 8,
+              "attr": {
+                "position": [
+                  37,
+                  -124,
+                  1
+                ]
+              },
+              "ideas": {
+                "1": {
+                  "title": "Eventid=4624 & logon_type in (2, 10, 7) & AccountName like svc_* (where svc_* is your internal naming convention for service accounts)",
+                  "id": 11,
+                  "attr": {
+                    "position": [
+                      99,
+                      -159,
+                      1
+                    ]
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "More than 1 Successful logon with logon_type in 3, 10 from same AccountName &  diffrent Source Network Address",
+              "id": 12,
+              "attr": {
+                "position": [
+                  235.01171875,
+                  -53.23828125,
+                  2
+                ],
+                "style": {
+                  "width": 397.973
+                }
+              }
+            },
+            "3": {
+              "title": "Interactive Logon (logon type 10, 2) & \"Account Name\" is like \"*$\" (fake Machine Account)",
+              "id": 13,
+              "attr": {
+                "style": {
+                  "width": 410.977
+                }
+              }
+            },
+            "4": {
+              "title": "4624 and logon_type in (3, 10) and both Source WorkstationName and Target are EndUser Machines",
+              "id": 20,
+              "attr": {
+                "style": {
+                  "width": 422.992
+                }
+              }
+            },
+            "5": {
+              "title": "4624 and lgon type eq 10 & \"Source Network Address\" not in {IT Subnets}",
+              "id": 21,
+              "attr": {
+                "style": {
+                  "width": 469.984
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#99CC00"
+            },
+            "position": [
+              94.98828125,
+              -182.24609375,
+              15
+            ]
+          }
+        },
+        "-25.25": {
+          "title": "RDP Tunneling",
+          "id": 3,
+          "ideas": {
+            "1": {
+              "title": "EventId=4624 & logon_type=10 & \"Source Network Address\" eq 127.*.*.* or ::1 (loopback@)",
+              "id": 7,
+              "attr": {
+                "style": {
+                  "width": 267
+                },
+                "position": [
+                  224,
+                  -53,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              173.01171875,
+              148.2421875,
+              16
+            ],
+            "style": {
+              "backgroundColor": "#99CC00"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hunting with 4624/4625 [Logon/Logoff > Audit Logon ]",
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}
