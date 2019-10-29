@@ -1,0 +1,530 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Hunting for suspicious scheduled Tasks",
+      "id": 1,
+      "attr": {
+        "position": [
+          -124,
+          -319.4921875,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#FFCC00"
+        }
+      },
+      "ideas": {
+        "-1.5": {
+          "title": "Suspicious Task Update",
+          "id": 17,
+          "ideas": {
+            "1": {
+              "title": "EventID 4702 \"Task Updated\" & \"Subject Account Name\"!=\"System\"",
+              "id": 19,
+              "attr": {
+                "position": [
+                  334,
+                  -26.01171875,
+                  1
+                ],
+                "style": {
+                  "width": 343.988
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00"
+            },
+            "position": [
+              222.98828125,
+              -14.99609375,
+              8
+            ]
+          }
+        },
+        "-1.75": {
+          "title": "Task Set to run Once (rare)",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "EventID=4698 and Event.payload regxp-matches \"(?i)(.*TimeTrigger.+EndBoundary.*)\" ",
+              "id": 21,
+              "attr": {
+                "style": {
+                  "width": 259.98
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00"
+            },
+            "position": [
+              130.99609375,
+              41.99609375,
+              10
+            ]
+          }
+        },
+        "-0.75": {
+          "title": "Suspicious schtasks CmdLine",
+          "id": 6,
+          "ideas": {
+            "1": {
+              "title": "[4688 or Sysmon EventId 1] -  Cmdline contains \" /s \" (remote sys)",
+              "id": 7,
+              "attr": {
+                "style": {
+                  "width": 323.969
+                },
+                "position": [
+                  300.9921875,
+                  -110.76171875,
+                  2
+                ]
+              }
+            },
+            "2": {
+              "title": "[4688 or Sysmon EventId 1] - Cmdline contains \"ONEVENT\" (rare)",
+              "id": 8,
+              "attr": {
+                "style": {
+                  "width": 375
+                },
+                "position": [
+                  232,
+                  -46.7578125,
+                  3
+                ]
+              }
+            },
+            "3": {
+              "title": "[4688 or Sysmon EventId 1] - Cmdline Contains one of the suspicious paths and (\"/create\" or /change\" or /run\")",
+              "id": 22,
+              "attr": {
+                "position": [
+                  353.9921875,
+                  38.25390625,
+                  1
+                ],
+                "style": {
+                  "width": 342.992
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00"
+            },
+            "position": [
+              147.98828125,
+              -153.99609375,
+              12
+            ]
+          }
+        },
+        "0.625": {
+          "title": "Remote Task creation ",
+          "id": 13,
+          "ideas": {
+            "1": {
+              "title": "EventId eq 5145 & Share Name eq \"\\\\*\\IPC$\" and RelativeTargetName eq atsvc (rare)",
+              "id": 14,
+              "attr": {
+                "style": {
+                  "width": 225.977
+                },
+                "position": [
+                  209.98828125,
+                  -125.015625,
+                  3
+                ]
+              }
+            },
+            "2": {
+              "title": "EventId=4624 and LogonType=3 followed by EventID=4698 & same LogonId within 1min ",
+              "id": 18,
+              "attr": {
+                "position": [
+                  283.9921875,
+                  -34,
+                  2
+                ],
+                "style": {
+                  "width": 280.977
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00",
+              "width": 152.973
+            },
+            "position": [
+              230,
+              -42.00390625,
+              13
+            ]
+          }
+        },
+        "-0.375": {
+          "title": "Suspicious STask Action - Path ",
+          "id": 3,
+          "ideas": {
+            "1": {
+              "title": "[4688 (Cmdline Logging enabled) or 4698 or 4702] - Start with those paths:  c:\\users\\*, c:\\programdata\\*, c:\\windows\\temp\\*",
+              "id": 4,
+              "attr": {
+                "position": [
+                  262,
+                  -44.00390625,
+                  1
+                ],
+                "style": {
+                  "width": 225.977
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00"
+            },
+            "position": [
+              120,
+              -308.9921875,
+              14
+            ]
+          }
+        },
+        "0.4375": {
+          "title": "Tasks with Short LifeTime",
+          "id": 15,
+          "ideas": {
+            "1": {
+              "title": "EventID 4698 followed by EventID 4699 with same LogonID and TaskName within 1min [Object Access\n > Other Object Access Events]",
+              "id": 16,
+              "attr": {
+                "style": {
+                  "width": 370.977
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00"
+            }
+          }
+        },
+        "0.53125": {
+          "title": "STask Action Set to legit MS Scripting/LolBas utility",
+          "id": 10,
+          "ideas": {
+            "1": {
+              "title": "[4688, 4698 or 4702 or Sysmon EvenID 1]    Start with those:  cscript.exe\nwscript.exe\nrundll32.exe\nregsvr32.exe\nwmic.exe\ncmd.exe\nmshta.exe\npowershell.exe",
+              "id": 11,
+              "attr": {}
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#00FF00"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Hunting for suspicious scheduled Tasks",
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}
