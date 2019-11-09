@@ -1,0 +1,926 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "TA505 TTPs Overview",
+      "id": 1,
+      "attr": {
+        "position": [
+          -304.986083984375,
+          -295.9652557373047,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#00FF00",
+          "fontMultiplier": 2.5
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Malwares",
+          "id": 2,
+          "ideas": {
+            "1": {
+              "title": "BankingTroj",
+              "id": 3,
+              "ideas": {
+                "1": {
+                  "title": "Dridex",
+                  "id": 5
+                },
+                "3": {
+                  "title": "Trickbot",
+                  "id": 46,
+                  "ideas": {}
+                },
+                "4": {
+                  "title": "Shifu",
+                  "id": 6,
+                  "attr": {}
+                }
+              }
+            },
+            "2": {
+              "title": "Ransomware",
+              "id": 4,
+              "ideas": {
+                "1": {
+                  "title": "Locky",
+                  "id": 7
+                },
+                "2": {
+                  "title": "Bart",
+                  "id": 41
+                },
+                "3": {
+                  "title": "Jaff",
+                  "id": 45
+                },
+                "4": {
+                  "title": "Philadelphia",
+                  "id": 48
+                },
+                "5": {
+                  "title": "GlobeImposter",
+                  "id": 49
+                }
+              },
+              "attr": {
+                "position": [
+                  465.9930419921875,
+                  -22.784744262695312,
+                  1
+                ]
+              }
+            },
+            "3": {
+              "title": "Backdoor",
+              "id": 13,
+              "ideas": {
+                "1": {
+                  "title": "ServerHelper DLL",
+                  "id": 14
+                },
+                "2": {
+                  "title": "FlawedAmmy",
+                  "id": 15
+                }
+              }
+            },
+            "4": {
+              "title": "InfoStealer",
+              "id": 42,
+              "ideas": {
+                "1": {
+                  "title": "Kegotip",
+                  "id": 43
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              135.00006103515625,
+              -269.9930419921875,
+              12
+            ]
+          }
+        },
+        "2": {
+          "title": "C2",
+          "id": 11,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900",
+              "width": 50
+            },
+            "position": [
+              893.9896240234375,
+              354.76385498046875,
+              18
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "Recentely registred domain",
+              "id": 55
+            },
+            "2": {
+              "title": "Mimic Microsoft domains with keywords like \"Office\", \"Update\", \"365\",\"Microsoft\", \"cdn\", \"sdn\" and 2 of \"-\" symbol",
+              "id": 60,
+              "attr": {
+                "style": {
+                  "width": 327.986
+                }
+              }
+            },
+            "3": {
+              "title": "HTTP-POST patterns (some)",
+              "id": 64,
+              "ideas": {
+                "1": {
+                  "title": "&D=*&U=*&OS=*&OSA=*",
+                  "id": 65,
+                  "attr": {
+                    "style": {
+                      "width": 218.993
+                    }
+                  }
+                },
+                "2": {
+                  "title": "key=*&sysid=*&resp=* via post ro /*/*.php",
+                  "id": 70,
+                  "attr": {
+                    "style": {
+                      "width": 327.969
+                    }
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "variety of C&C servers, allowing it to be resilient in the case of takedowns, sinkholes, and other defensive operations",
+              "id": 71,
+              "attr": {
+                "style": {
+                  "width": 528.976
+                }
+              }
+            }
+          }
+        },
+        "12": {
+          "title": "Persistence",
+          "id": 12,
+          "attr": {
+            "position": [
+              175,
+              180.01388549804688,
+              8
+            ],
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Service (e.g. sc create foundation binPath= \"%ALLUSERSPROFILE%\\NuGets\\wsus.exe -service\" type= own start= auto, net.exe start foundation)",
+              "id": 30,
+              "attr": {
+                "style": {
+                  "width": 535.983
+                }
+              }
+            },
+            "2": {
+              "title": "Run key (e.g. reg add \"HKCU\\SOFTWARE\\microsoft\\windows\\currentversion\\run\" /v ServiceDLL /t REG_EXPAND_SZ /d \"rundll32 C:\\Users\\admin\\AppData\\Local\\Temp\\xmlparse.dll, sega\" /f",
+              "id": 31,
+              "attr": {
+                "style": {
+                  "width": 582.986
+                }
+              }
+            },
+            "3": {
+              "title": "Scheduled Task (e.g. schtasks.exe /create /tn \"ServHelper\" /tr \"rundll32.exe C:\\Windows\\servhelper.dll, main\" /ru SYSTEM /sc onlogon",
+              "id": 32,
+              "attr": {
+                "style": {
+                  "width": 521.979
+                }
+              }
+            },
+            "4": {
+              "title": "Startup Folder",
+              "id": 33
+            },
+            "5": {
+              "title": "Modified Startup folder",
+              "id": 34
+            },
+            "6": {
+              "title": "Create Account:  > net.exe user supportaccount Ghar4f5 /add\n> net.exe LOCALGROUP \"Remote Desktop Users\" supportaccount /ADD\n> net LOCALGROUP \"Administrators\" supportaccount /ADD",
+              "id": 73,
+              "attr": {
+                "style": {
+                  "width": 481.979
+                }
+              }
+            }
+          }
+        },
+        "13": {
+          "title": "CredAccess",
+          "id": 81,
+          "ideas": {
+            "1": {
+              "title": "TA505 they tend to copy Browsers user profiles (credentials, history of browsing, cookies etc.)\nTA505 has used malware to gather credentials from FTP clients and Outlook",
+              "id": 82,
+              "attr": {
+                "style": {
+                  "width": 573.993
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FFCC00"
+            }
+          }
+        },
+        "-0.25": {
+          "title": "Typical Targets (not limited to)",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "Financial institutions ",
+              "id": 21,
+              "attr": {}
+            },
+            "2": {
+              "title": "AeroSpace",
+              "id": 22
+            },
+            "3": {
+              "title": "Manufacturing",
+              "id": 23,
+              "attr": {}
+            },
+            "5": {
+              "title": "Healthcare",
+              "id": 44
+            },
+            "6": {
+              "title": "Energy",
+              "id": 57
+            },
+            "7": {
+              "title": "Transport",
+              "id": 59
+            },
+            "0.5": {
+              "title": "Countries: Europe, USA, Japan, S.Koera, South Africa, other",
+              "id": 29,
+              "attr": {
+                "style": {
+                  "width": 250.99
+                },
+                "position": [
+                  182,
+                  -117.00344848632812,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              612.0034790039062,
+              -288.2222213745117,
+              16
+            ]
+          }
+        },
+        "1.5": {
+          "title": "Phishing",
+          "id": 10,
+          "attr": {
+            "position": [
+              353.9930419921875,
+              -162.98959350585938,
+              11
+            ],
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Attachements",
+              "id": 16,
+              "ideas": {
+                "1": {
+                  "title": "use of Excel 4.0 macros",
+                  "id": 17,
+                  "attr": {
+                    "position": [
+                      107.0069580078125,
+                      -55.00347900390625,
+                      1
+                    ]
+                  }
+                },
+                "2": {
+                  "title": "Zipped Scripts (*.js, *.vbs, *.wsf etc.)",
+                  "id": 26
+                },
+                "3": {
+                  "title": "office document with macro",
+                  "id": 28,
+                  "attr": {
+                    "style": {
+                      "width": 201.979
+                    }
+                  }
+                },
+                "4": {
+                  "title": "HTML attachments",
+                  "id": 47,
+                  "attr": {}
+                },
+                "5": {
+                  "title": "iso -> lnk -> msi -> nsis -> serverhelper ",
+                  "id": 76,
+                  "attr": {
+                    "style": {
+                      "width": 350.99
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "URLs",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": "Fake Onedrive, Google Drive, Dropbox, Sync, Office, Adobe Reader URLs & templates",
+                  "id": 19,
+                  "attr": {
+                    "style": {
+                      "width": 268.976
+                    }
+                  }
+                },
+                "2": {
+                  "title": "use of rare/less known url shorteners",
+                  "id": 56,
+                  "attr": {
+                    "style": {
+                      "width": 278.976
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "position": [
+                  82.0069580078125,
+                  82.98260498046875,
+                  1
+                ]
+              }
+            },
+            "3": {
+              "title": "Leverage mass mailing-botnets",
+              "id": 72,
+              "attr": {
+                "style": {
+                  "width": 285.983
+                }
+              }
+            }
+          }
+        },
+        "-0.375": {
+          "title": "Process Execution Flow",
+          "id": 9,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "msiexec.exe connect to the internet",
+              "id": 24,
+              "attr": {
+                "style": {
+                  "width": 226.99
+                },
+                "position": [
+                  217.99956298828124,
+                  -106.99649047851562,
+                  1
+                ]
+              }
+            },
+            "2": {
+              "title": "msiexec with cmdline containing url",
+              "id": 27,
+              "attr": {
+                "style": {
+                  "width": 241.962
+                }
+              }
+            },
+            "3": {
+              "title": "rundll32.exe with suspicious path (i.e. %temp%)  in the cmdline and suspicious module extension (i.e. .dat instead of *.dll)",
+              "id": 35,
+              "attr": {
+                "style": {
+                  "width": 303.976
+                }
+              }
+            },
+            "4": {
+              "title": "winword.exe or excel.exe spawn cmd.exe with cmdline like : start \"*\" *.exe \" or msiexec.exe",
+              "id": 36,
+              "attr": {
+                "style": {
+                  "width": 270.99
+                }
+              }
+            },
+            "5": {
+              "title": "cmd unique cmdline: a) cmd.exe /c start \"\" *.exe\nb) cmd.exe /c del c:\\*.exe>>NUL",
+              "id": 37,
+              "attr": {
+                "style": {
+                  "width": 496.99
+                }
+              }
+            },
+            "6": {
+              "title": "Winword.exe or Excel.exe creates file \"OleObject1.bin\" from which it extract and loads 64 / 32 bit loader DLL",
+              "id": 50,
+              "attr": {
+                "style": {
+                  "width": 470.99
+                }
+              }
+            },
+            "7": {
+              "title": "rundll32.exe spawns cmd.exe and connect to http/https",
+              "id": 66,
+              "attr": {
+                "style": {
+                  "width": 292.986
+                }
+              }
+            },
+            "8": {
+              "title": "cscript or wscript.exe with suspicious path in cmdline  --> cmd.exe /c *.bat --> rundll32.exe",
+              "id": 68,
+              "attr": {
+                "style": {
+                  "width": 312.986
+                }
+              }
+            }
+          }
+        },
+        "-2.375": {
+          "title": "High Level Characteristics",
+          "id": 51,
+          "ideas": {
+            "1": {
+              "title": "deep connections to the underground malware scene",
+              "id": 52,
+              "attr": {
+                "style": {
+                  "width": 336.979
+                }
+              }
+            },
+            "2": {
+              "title": "high volume of malicious spam campaigns",
+              "id": 54,
+              "attr": {
+                "style": {
+                  "width": 328.976
+                }
+              }
+            },
+            "3": {
+              "title": "Mixed target 's industry types (mainly  corporate) with financial gain obj",
+              "id": 58,
+              "attr": {
+                "style": {
+                  "width": 271.979
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          }
+        },
+        "-12.375": {
+          "title": "Discovery",
+          "id": 38,
+          "ideas": {
+            "1": {
+              "title": "net group /domain",
+              "id": 40,
+              "attr": {
+                "position": [
+                  107.00347900390625,
+                  73.00347900390625,
+                  1
+                ]
+              }
+            },
+            "2": {
+              "title": "cmd.exe /c echo %logonserver%",
+              "id": 61
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              123.01385498046875,
+              439.5486602783203,
+              15
+            ]
+          }
+        },
+        "-1.375": {
+          "title": " Unique Strings",
+          "id": 62,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "RD64,RD86,RD86R,aSDGsdgo445,asdgdgYss455,getandgodll_Win32.dll,wsus,“AMMYY”,“Foundation\"",
+              "id": 67
+            }
+          }
+        },
+        "-0.875": {
+          "title": "Defense Evasion / PrivEsc",
+          "id": 74,
+          "attr": {
+            "position": [
+              45.00347900390625,
+              247.2117919921875,
+              17
+            ],
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Hijack RDP settings, to enable RDP tunneling via SSH tunnel,:\nRegKey: HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\TermService\\Paramete /v ServiceDLL",
+              "id": 75,
+              "attr": {
+                "position": [
+                  181.00347900390625,
+                  -123.88191223144531,
+                  1
+                ],
+                "style": {
+                  "width": 616.997
+                }
+              }
+            },
+            "2": {
+              "title": "UAC bypass using UACME (i.e. akg8.exe 43 \"C:\\Users\\admin\\AppData\\Local\\Temp\\\\1.lnk\")",
+              "id": 77,
+              "attr": {
+                "style": {
+                  "width": 216.99
+                }
+              }
+            },
+            "3": {
+              "title": "VBA Macro to create task via COM or create process via WMI to bypass detection based on susp childs of winword.exe/excel.exe",
+              "id": 79,
+              "attr": {
+                "style": {
+                  "width": 327.986
+                }
+              }
+            },
+            "4": {
+              "title": "use of sdelete.exe to delete temp files",
+              "id": 80,
+              "attr": {
+                "style": {
+                  "width": 295.983
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "TA505 TTPs Overview",
+  "links": [],
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}
