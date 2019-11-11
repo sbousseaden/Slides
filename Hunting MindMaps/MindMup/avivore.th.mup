@@ -1,0 +1,755 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "AVIVORE",
+      "id": 1,
+      "attr": {
+        "position": [
+          -113.9964599609375,
+          -149.97914123535156,
+          1
+        ],
+        "style": {
+          "backgroundColor": "#00FF00"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "meta",
+          "id": 2,
+          "ideas": {
+            "1": {
+              "title": "Vector - Supply Chain via VPN or other equiv remote access medium",
+              "id": 3,
+              "attr": {
+                "position": [
+                  162.013916015625,
+                  -59.98956298828125,
+                  4
+                ]
+              }
+            },
+            "2": {
+              "title": "primary objective for their intrusions is believed to be espionage,\nas well as access enablement through supply chain partners",
+              "id": 4,
+              "attr": {
+                "position": [
+                  108.0035400390625,
+                  36,
+                  3
+                ],
+                "style": {
+                  "width": 420.99
+                }
+              }
+            },
+            "3": {
+              "title": "Target Industries:  Aerospace and Defence engineering,Automotive, Energy/Nuclear, Space and Satellite Technology",
+              "id": 12,
+              "attr": {
+                "style": {
+                  "width": 303.976
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              129.9964599609375,
+              -157.98611450195312,
+              6
+            ]
+          }
+        },
+        "2": {
+          "title": "Collection",
+          "id": 7,
+          "ideas": {
+            "1": {
+              "title": "Internal network diagrams, guides for services such as customer VPNs and other\ninformation related to network architecture, configuration, and security operations\nfunctions",
+              "id": 8,
+              "attr": {
+                "style": {
+                  "width": 506.972
+                }
+              }
+            },
+            "2": {
+              "title": "Public Key Infrastructure information, associated certificates, and any supporting\ninformation which may enable the adversary to conduct certificate-based\nauthentication or otherwise manipulate network trust.",
+              "id": 9,
+              "attr": {
+                "style": {
+                  "width": 515.965
+                }
+              }
+            },
+            "3": {
+              "title": " theft of machine certificates, VPN\nconfiguration files and network architecture diagrams",
+              "id": 42,
+              "attr": {
+                "style": {
+                  "width": 515.983
+                }
+              }
+            },
+            "4": {
+              "title": " was automated via scripts and scheduled tasks and\ncaptured data was transferred to beachhead hosts, often those same bastion hosts that\nsat between different networks that were used to proxy attacker network connections",
+              "id": 43,
+              "attr": {
+                "style": {
+                  "width": 672.986
+                }
+              }
+            },
+            "5": {
+              "title": "Prior to\nexfiltration, data would be chunked, encrypted and compressed using command-line\ntools, most notably rar.exe. ",
+              "id": 46,
+              "attr": {
+                "style": {
+                  "width": 573.976,
+                  "textAlign": "center"
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              152.0103759765625,
+              28.003448486328125,
+              7
+            ]
+          }
+        },
+        "5": {
+          "title": "Defense Evasion",
+          "id": 36,
+          "ideas": {
+            "1": {
+              "title": "Anti-Forensic",
+              "id": 37,
+              "ideas": {
+                "1": {
+                  "title": "using the Windows Registry Editor (RegEdit.\nexe) to remove the artefacts associated with RDP sessions they had established\nbetween hosts",
+                  "id": 40,
+                  "attr": {
+                    "style": {
+                      "width": 492.986
+                    }
+                  }
+                },
+                "2": {
+                  "title": "clearing artefacts of failed logons\nand established network connections from the Windows event logs of compromised\nhosts, and removing entries from hosts’ antivirus logs",
+                  "id": 41,
+                  "attr": {
+                    "style": {
+                      "width": 606.979
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "proxying of RDP\nand SSL VPN traffic over non-standard ports, particularly TCP/53 and TCP/1443 (e.g. netsh interface portproxy add v4tov4 listenport=53\nconnectaddress=127.0.0.1 connectport=3389)",
+              "id": 39,
+              "attr": {
+                "style": {
+                  "width": 613.976
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          }
+        },
+        "-2": {
+          "title": "Lateral Movement",
+          "id": 10,
+          "ideas": {
+            "1": {
+              "title": "Access to laptops and workstations belonging to senior technical staff members.",
+              "id": 11,
+              "attr": {
+                "style": {
+                  "width": 306.997
+                }
+              }
+            },
+            "2": {
+              "title": "Remote Scheduled Task (e.g. schtasks /create /S <REMOTEHOST> /U <ADMINUSER> /P <PASSWORD> /tn\nSystem /ru system /f /tr c:\\windows\\AppPatch\\clr.bat /sc once /st\n03:05)",
+              "id": 29,
+              "attr": {
+                "style": {
+                  "width": 635.931
+                }
+              }
+            },
+            "3": {
+              "title": "Remote Desktop\nProtocol (RDP) using compromised credentials (e.g. 1) attacker RDP from DC in org-A to DC in org-B, 2) RDP from DC to a workstation)",
+              "id": 32,
+              "attr": {
+                "style": {
+                  "width": 481.979
+                }
+              }
+            },
+            "4": {
+              "title": "\"Net use \\\\*\" commands",
+              "id": 33
+            },
+            "5": {
+              "title": "modified WMIExec VBScripts",
+              "id": 34,
+              "attr": {
+                "style": {
+                  "width": 211.979
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          }
+        },
+        "-3": {
+          "title": "Execution Flow",
+          "id": 16,
+          "attr": {
+            "position": [
+              130,
+              -154.99652099609375,
+              8
+            ],
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "DLL Side Loading - McUtil.dll (PlugX Loader) loaded by mc.exe (legit Mcafee binary). After execution,  PlugX Payload  is injected into a running legitimate svchost.exe",
+              "id": 17,
+              "attr": {
+                "style": {
+                  "width": 566.979
+                }
+              }
+            },
+            "2": {
+              "title": "Suspicious Exec/Payload Staging Paths: c:\\programdata\\esetoem\\, c:\\programdata\\mcafeeoem\\, C:\\PerfLogs\\, C:\\Windows\\AppPatch\\, c:\\temp\\",
+              "id": 18,
+              "attr": {
+                "style": {
+                  "width": 519.983
+                }
+              }
+            },
+            "3": {
+              "title": "use of CertMig.exe utility to export/import Certificates",
+              "id": 26,
+              "attr": {
+                "style": {
+                  "width": 411.979
+                }
+              }
+            },
+            "4": {
+              "title": "PowerShell, VBS (e.g. wmiexec.vbs)  and batch scripts from suspicious paths (e.g. c:\\windows\\apppatch\\clr.bat)",
+              "id": 30,
+              "attr": {
+                "style": {
+                  "width": 338.976
+                }
+              }
+            },
+            "5": {
+              "title": "scheduled tasks (e.g. schtasks /create * /sc once *)",
+              "id": 31,
+              "attr": {
+                "style": {
+                  "width": 325.983
+                }
+              }
+            }
+          }
+        },
+        "-4": {
+          "title": "Discovery",
+          "id": 21,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              111.9896240234375,
+              76.33678436279297,
+              4
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": " in-built system commands\nsuch as ‘net’, ‘ver’ and ‘whoami’ to enumerate accounts, domain trusts and system\nconfiguration information",
+              "id": 22,
+              "attr": {
+                "style": {
+                  "width": 336.99
+                },
+                "position": [
+                  436.99658203125,
+                  -75.23265886306763,
+                  3
+                ]
+              }
+            },
+            "3": {
+              "title": "SoftPerfect Network Scanner",
+              "id": 24,
+              "attr": {
+                "position": [
+                  222.99658203125,
+                  -10.222221851348877,
+                  1
+                ]
+              }
+            },
+            "13": {
+              "title": "browsing through file shares\non victim systems as well as online storage services such as OneDrive",
+              "id": 23,
+              "attr": {
+                "style": {
+                  "width": 280.99
+                },
+                "position": [
+                  404.00352478027344,
+                  28.770820140838623,
+                  2
+                ]
+              }
+            }
+          }
+        },
+        "0.5": {
+          "title": "CredAccess",
+          "id": 5,
+          "ideas": {
+            "1": {
+              "title": "Domain Administrator and privileged service accounts, as well as accounts belonging\nto senior members of IT and Information Security teams, or Managed Service\nProviders",
+              "id": 6,
+              "attr": {
+                "style": {
+                  "width": 556.997
+                }
+              }
+            },
+            "2": {
+              "title": "forced the caching of plaintext credentials on\ncrucial systems such as Domain Controllers by modifying the Windows Authentication\nDigest (WDigest) UseLogonCredential registry key",
+              "id": 27,
+              "attr": {
+                "style": {
+                  "width": 561.962
+                }
+              }
+            },
+            "3": {
+              "title": "dumping\nthe running memory of the Local Security Authority Subsystem Service (lsass) using\nWindows SysInternals ProcDump, MimiKatz and Windows Task Manager",
+              "id": 28,
+              "attr": {
+                "style": {
+                  "width": 551.979
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              144.9964599609375,
+              -349.65279388427734,
+              2
+            ]
+          }
+        },
+        "-14": {
+          "title": "Malwares",
+          "id": 13,
+          "ideas": {
+            "1": {
+              "title": " Remote Access Trojan",
+              "id": 14,
+              "ideas": {
+                "1": {
+                  "title": "PlugX",
+                  "id": 15
+                }
+              },
+              "attr": {
+                "position": [
+                  78.00341796875,
+                  53.013885498046875,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900",
+              "width": 57.9861
+            },
+            "position": [
+              147.9896240234375,
+              190.34722137451172,
+              5
+            ]
+          }
+        },
+        "-3.5": {
+          "title": "Persistence",
+          "id": 19,
+          "ideas": {
+            "1": {
+              "title": "New Service (e.g. McAfeeOEM)",
+              "id": 20
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              196.99658203125,
+              33.78472900390625,
+              9
+            ]
+          }
+        },
+        "-24": {
+          "title": "Exfiltration",
+          "id": 44,
+          "attr": {
+            "position": [
+              110.00347900390625,
+              381.7882080078125,
+              10
+            ],
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Both Tor and commercial VPN solutions were used by AVIVORE to connect into\nvictims’ external-facing FTP or SFTP servers for which they had stolen credentials\nduring earlier stages of their intrusions.",
+              "id": 45,
+              "attr": {
+                "style": {
+                  "width": 610.99
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "attr": {
+    "theme": "default"
+  },
+  "title": "AVIVORE",
+  "links": [],
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}
