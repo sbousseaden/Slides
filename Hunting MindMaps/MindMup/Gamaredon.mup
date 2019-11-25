@@ -1,0 +1,691 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Gamaredon Group/G0047 ",
+      "id": 1,
+      "attr": {
+        "position": [
+          116,
+          -24,
+          1
+        ],
+        "style": {
+          "width": 114.75
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Initial Access",
+          "id": 6,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              174.34374999999977,
+              -322.5625000000001,
+              4
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "Email with SFX(self extracted archive) attachment",
+              "id": 32,
+              "ideas": {
+                "1": {
+                  "title": "Contains",
+                  "id": 33,
+                  "ideas": {
+                    "1": {
+                      "title": "Decoy document",
+                      "id": 34
+                    },
+                    "2": {
+                      "title": "SFX archives",
+                      "id": 35
+                    },
+                    "3": {
+                      "title": "VBS Scripts",
+                      "id": 37
+                    },
+                    "4": {
+                      "title": "Batch scripts(*.cmd)",
+                      "id": 38
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Execution",
+          "id": 7,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "mshta.exe",
+              "id": 51,
+              "ideas": {}
+            },
+            "3": {
+              "title": "attrib -h -s",
+              "ideas": {},
+              "id": 53,
+              "attr": {}
+            },
+            "4": {
+              "title": "suspicious path",
+              "id": 52,
+              "attr": {},
+              "ideas": {
+                "1": {
+                  "title": "%LOCALAPPDATA%\\Microsoft\\Windows\\UsrClass.dat{%GUID%}.dll",
+                  "id": 54,
+                  "attr": {},
+                  "ideas": {}
+                },
+                "3": {
+                  "title": "%LOCALAPPDATA%/Microsoft/Feeds/%GUID%/",
+                  "ideas": {},
+                  "id": 57,
+                  "attr": {}
+                }
+              }
+            },
+            "3.5": {
+              "title": "rundll32.exe",
+              "ideas": {},
+              "id": 63,
+              "attr": {}
+            }
+          }
+        },
+        "3": {
+          "title": "Persistance",
+          "id": 12,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Scheduled Tasks",
+              "id": 44,
+              "attr": {
+                "style": {
+                  "width": 106
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "schtasks /Create /SC MINUTE /MO 11 /F /tn %VOLUME_SERIAL_NUMBER% /tr \"%APPDATA%\\Microsoft\\Crypto\\keys\\%VOLUME_SERIAL_NUMBER \\cryptcp.exe\"",
+                  "id": 45,
+                  "attr": {
+                    "style": {
+                      "width": 392
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "Startup Folder",
+              "id": 47,
+              "ideas": {
+                "1": {
+                  "title": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\winupd.lnk",
+                  "id": 48,
+                  "attr": {
+                    "style": {
+                      "width": 253
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "title": "Command and Control",
+          "id": 14,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "HTTP",
+              "ideas": {
+                "1": {
+                  "title": "C2 doamins *.ddns.net *.space",
+                  "ideas": {},
+                  "id": 80
+                },
+                "2": {
+                  "title": "task results as part of url(/<computer name>_<C:volume serial/ExelCreate_v.701E9CFA.sms)",
+                  "id": 81,
+                  "ideas": {}
+                }
+              },
+              "id": 79,
+              "attr": {}
+            }
+          }
+        },
+        "14": {
+          "title": "Lateral Movement",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": " copy win.exe to <RemovableMedia>\\Boot and hide it with cmd: attrib -h -s win.exe\n\n",
+              "id": 88
+            }
+          },
+          "id": 86
+        },
+        "-10": {
+          "title": "Meta",
+          "id": 5,
+          "attr": {
+            "style": {
+              "width": 71,
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              314.7187500000002,
+              -304.9843750000001,
+              3
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "Known targets",
+              "id": 16,
+              "ideas": {
+                "1": {
+                  "title": "Ukrainian government and defense agencies",
+                  "id": 17
+                }
+              }
+            },
+            "2": {
+              "title": "First seen",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": "2013",
+                  "id": 19
+                }
+              }
+            }
+          }
+        },
+        "-12": {
+          "title": "Malware",
+          "id": 13,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Legitimate software",
+              "id": 20,
+              "ideas": {
+                "1": {
+                  "title": "wget(c2 communication)",
+                  "id": 21
+                },
+                "2": {
+                  "title": "UltraVNC(as RAT)",
+                  "id": 22
+                },
+                "3": {
+                  "title": "ChkFlash(steal USB data)",
+                  "id": 23
+                }
+              }
+            },
+            "2": {
+              "title": "Custom Development",
+              "id": 24,
+              "ideas": {
+                "1": {
+                  "title": "Pteranodon(MSO1234.win/winrestore.dll)",
+                  "id": 26
+                },
+                "2": {
+                  "title": "Downloader",
+                  "id": 28,
+                  "ideas": {
+                    "1": {
+                      "title": "MSO1567.dls/LocalSMS.dll",
+                      "id": 29
+                    },
+                    "2": {
+                      "title": "MSO8734.obn/MpClients.dll",
+                      "id": 30
+                    }
+                  }
+                },
+                "3": {
+                  "title": "USBStealer(MSO5678.usb/OfficeUpdate.dll)",
+                  "id": 31
+                }
+              }
+            }
+          }
+        },
+        "-11.5": {
+          "title": "Discovery",
+          "id": 15,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "tasklist",
+              "id": 40
+            },
+            "2": {
+              "title": " wmic process",
+              "id": 41
+            },
+            "3": {
+              "title": " systeminfo",
+              "id": 42,
+              "ideas": {}
+            },
+            "4": {
+              "title": "removable USB drives(WMIC LogicalDisk Where ^(DriveType^=2 And MediaType^=NULL^) Get Name^,VolumeSerialNumber/Value^|Find \"=\"’)",
+              "id": 43
+            },
+            "5": {
+              "title": "*.doc *.docx *.xls *.xlsx *.rtf *.odt*.txt”  from Desktop,Documents, Downloads",
+              "id": 64,
+              "attr": {},
+              "ideas": {
+                "1": {
+                  "title": "saved",
+                  "ideas": {
+                    "2": {
+                      "title": "C:\\Users<Username>\\AppData\\Roaming\\Microsoft\\store\\",
+                      "ideas": {},
+                      "id": 72
+                    },
+                    "3": {
+                      "title": "%LOCALAPPDATA%/Microsoft/Feeds/%GUID%/",
+                      "ideas": {},
+                      "id": 73
+                    }
+                  },
+                  "id": 70,
+                  "attr": {}
+                }
+              }
+            },
+            "6": {
+              "title": "%AppData%\\Skype",
+              "id": 74,
+              "ideas": {},
+              "attr": {
+                "position": [
+                  135.6093750000001,
+                  184.06249999999977,
+                  1
+                ]
+              }
+            }
+          }
+        },
+        "-22": {
+          "title": "Exfiltration",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "HTTP",
+              "id": 62,
+              "ideas": {}
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            },
+            "position": [
+              109,
+              262,
+              2
+            ]
+          }
+        },
+        "3.5": {
+          "title": "Defense Evasion",
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF9900"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "wmphost.exe - runs an infinite loop until mouse movement gets detected, then it exits(sandbox detection)",
+              "id": 87,
+              "attr": {
+                "style": {
+                  "width": 473
+                }
+              }
+            }
+          },
+          "id": 60
+        }
+      }
+    }
+  },
+  "title": "Gamaredon Group/G0047 ",
+  "links": [],
+  "theme": {
+    "name": "MindMup Default",
+    "node": [
+      {
+        "name": "default",
+        "cornerRadius": 10,
+        "backgroundColor": "#E0E0E0",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#707070",
+            "width": 1,
+            "style": "solid"
+          }
+        },
+        "shadow": [
+          {
+            "color": "#070707",
+            "opacity": 0.4,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ],
+        "text": {
+          "margin": 5,
+          "alignment": "center",
+          "maxWidth": 146,
+          "color": "#4F4F4F",
+          "lightColor": "#EEEEEE",
+          "darkColor": "#000000",
+          "font": {
+            "lineSpacing": 4.5,
+            "lineSpacingPx": 6,
+            "size": 9,
+            "sizePx": 12,
+            "weight": "bold"
+          }
+        },
+        "connections": {
+          "default": {
+            "h": "center",
+            "v": "center"
+          },
+          "from": {
+            "horizontal": {
+              "h": "nearest-inset",
+              "v": "center"
+            }
+          },
+          "to": {
+            "h": "nearest",
+            "v": "center"
+          }
+        },
+        "decorations": {
+          "height": 20,
+          "edge": "top",
+          "overlap": true,
+          "position": "end",
+          "margin": 2,
+          "label": {
+            "border": 1,
+            "cornerRadius": 11,
+            "margin": 2,
+            "font": {
+              "lineSpacing": 0,
+              "lineSpacingPx": 0,
+              "size": 9,
+              "sizePx": 12,
+              "weight": "bold"
+            }
+          },
+          "cornerRadius": 12,
+          "backgroundColor": "#22aae0",
+          "opacity": 0.8,
+          "color": "#ffffff"
+        }
+      },
+      {
+        "name": "level_1",
+        "backgroundColor": "#22AAE0"
+      },
+      {
+        "name": "unlabelled_node",
+        "unlabelled": true
+      },
+      {
+        "name": "activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#22AAE0",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "level_1.activated",
+        "border": {
+          "type": "surround",
+          "line": {
+            "color": "#EEEEEE",
+            "width": 3,
+            "style": "dotted"
+          }
+        }
+      },
+      {
+        "name": "selected",
+        "shadow": [
+          {
+            "color": "#000000",
+            "opacity": 0.9,
+            "offset": {
+              "width": 2,
+              "height": 2
+            },
+            "radius": 2
+          }
+        ]
+      },
+      {
+        "name": "collapsed",
+        "shadow": [
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 4
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          }
+        ]
+      },
+      {
+        "name": "collapsed.selected",
+        "shadow": [
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 1
+            },
+            "radius": 0
+          },
+          {
+            "color": "#888888",
+            "offset": {
+              "width": 0,
+              "height": 3
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 6
+            },
+            "radius": 0
+          },
+          {
+            "color": "#555555",
+            "offset": {
+              "width": 0,
+              "height": 7
+            },
+            "radius": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "offset": {
+              "width": 0,
+              "height": 10
+            },
+            "radius": 0
+          },
+          {
+            "color": "#333333",
+            "offset": {
+              "width": 0,
+              "height": 11
+            },
+            "radius": 0
+          }
+        ]
+      }
+    ],
+    "connector": {
+      "default": {
+        "type": "quadratic",
+        "controlPoint": {
+          "above": {
+            "width": 0,
+            "height": 0.75
+          },
+          "below": {
+            "width": 0,
+            "height": 0.75
+          },
+          "horizontal": {
+            "width": 0,
+            "height": 0
+          }
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        },
+        "line": {
+          "color": "#707070",
+          "lineStyle": "solid",
+          "width": 1
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "line": {
+          "color": "red",
+          "lineStyle": "dashed",
+          "width": 1
+        },
+        "label": {
+          "position": {
+            "ratio": 0.5
+          },
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#FFFFFF",
+          "text": {
+            "color": "#4F4F4F",
+            "font": {
+              "size": 9,
+              "sizePx": 12,
+              "weight": "normal"
+            }
+          }
+        }
+      }
+    }
+  }
+}
