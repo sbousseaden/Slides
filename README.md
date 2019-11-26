@@ -1,5 +1,5 @@
 # Slides
 
-It's possible to reuse those Mind Maps and/or Training Slides content after written request for approval by it's author.
+Usage of the content of this repository for commercial purposes is not authorized prior to a written constent from it's authors.
 
 Contact: bousseaden.samir [@] gmail.com
