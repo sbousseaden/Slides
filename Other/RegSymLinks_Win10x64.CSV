@@ -1,0 +1,84 @@
+process,RegSymLink,RegTarget,cc
+C:\windows\system32\svchost.exe,HKU\S-1-5-80-3880006512-4290199581-1648723128-3569869737-3631323133\Software\Classes\SymbolicLinkValue,\Registry\User\S-1-5-80-3880006512-4290199581-1648723128-3569869737-3631323133_Classes,1
+C:\windows\system32\svchost.exe,HKU\S-1-5-80-1985561900-798682989-2213159822-1904180398-3434236965\Software\Classes\SymbolicLinkValue,\Registry\User\S-1-5-80-1985561900-798682989-2213159822-1904180398-3434236965_Classes,1
+C:\windows\system32\svchost.exe,HKU\S-1-5-21-1586556212-2165235939-1437495523-1001\Software\Classes\SymbolicLinkValue,\Registry\User\S-1-5-21-1586556212-2165235939-1437495523-1001_Classes,1
+C:\windows\system32\csrss.exe,HKLM\System\CurrentControlSet\Control\Video\{E2CD57F4-3753-11EA-8173-806E6F6E6963}\0002\SymbolicLinkValue,\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000,1
+C:\windows\system32\csrss.exe,HKLM\System\CurrentControlSet\Control\Video\{E2CD57F4-3753-11EA-8173-806E6F6E6963}\0001\SymbolicLinkValue,\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000,1
+C:\windows\system32\csrss.exe,HKLM\System\CurrentControlSet\Control\Video\{E2CD57F4-3753-11EA-8173-806E6F6E6963}\0000\SymbolicLinkValue,\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000,1
+C:\windows\System32\spoolsv.exe,HKLM\System\CurrentControlSet\Control\Print\Printers\SymbolicLinkValue,\Registry\Machine\Software\Microsoft\Windows NT\CurrentVersion\Print\Printers,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\RegisteredApplications\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\RegisteredApplications,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Policies\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Policies,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\XAML\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\XAML,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Telephony\Locations\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Telephony\Locations,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Setup\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\PreviewHandlers\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PreviewHandlers,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Parental Controls\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Parental Controls,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Group Policy\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\KindMap\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\KindMap,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\DriveIcons\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DriveIcons,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Control Panel\ThemeVolatile\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\ThemeVolatile,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Control Panel\Theme\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Theme,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\App Paths\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Search\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows Search,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Time Zones\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\ProfileList\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Print\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Ports\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Ports,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Perflib\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\NetworkCards\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\LanguagePack\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\LanguagePack,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\GRE_Initialize\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\GRE_Initialize,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\FontSubstitutes\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Fonts\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\FontMapper\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontMapper,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\FontLink\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\FontDPI\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontDPI,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Containers\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Containers,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Console\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\UserData\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\UserData,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Unified Store\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Unified Store,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Transaction Server\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Transaction Server,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\TermServLicensing\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\TermServLicensing,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\SystemCertificates\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\SystemCertificates,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Software\Microsoft\Shared Tools\Msinfo\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Software\Microsoft\Shared Tools\Msinfo,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Shell\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Shell,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Semgr\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Semgr,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\SecurityManager,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Rpc\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Rpc,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Ras\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Ras,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Poom\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Poom,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Pim\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Pim,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Phone\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Phone,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Ole\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Ole,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Notepad\DefaultFonts\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Notepad\DefaultFonts,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Non-Driver Signing\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Non-Driver Signing,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\MTFKeyboardMappings\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\MTFKeyboardMappings,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\MTFInputType\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\MTFInputType,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\MTFFuzzyFactors\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\MTFFuzzyFactors,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\MSMQ\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\MSMQ,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Messaging\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Messaging,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\LanguageOverlay\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\LanguageOverlay,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Input\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Input,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\FuzzyDS\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\FuzzyDS,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\FingerKB\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\FingerKB,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\EventSystem\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\EventSystem,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\EnterpriseCertificates,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Driver Signing\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Driver Signing,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\DFS\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\DFS,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\DeviceReg\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\DeviceReg,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\CTF\TIP\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\CTF\TIP,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\CTF\SystemShared\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\CTF\SystemShared,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Cryptography\Services\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography\Services,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Cryptography\Calais\Readers\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography\Calais\Readers,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Cryptography\Calais\Current\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography\Calais\Current,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\COM3\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\COM3,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Microsoft\Cellular\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Microsoft\Cellular,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Clients\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Clients,1
+C:\windows\System32\smss.exe,HKLM\SOFTWARE\WOW6432Node\Classes\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Classes\Wow6432Node,1
+C:\windows\System32\smss.exe,HKCR\WOW6432Node\TypeLib\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Classes\TypeLib,1
+C:\windows\System32\smss.exe,HKCR\WOW6432Node\PROTOCOLS\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Classes\PROTOCOLS,1
+C:\windows\System32\smss.exe,HKCR\WOW6432Node\AppID\SymbolicLinkValue,\REGISTRY\MACHINE\SOFTWARE\Classes\AppID,1
