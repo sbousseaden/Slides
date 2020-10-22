@@ -1,0 +1,310 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Threat Hunting with  Security log",
+      "id": 1,
+      "attr": {
+        "position": [
+          -79,
+          -24,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Event ID 4625 - FAILED LOGINS",
+          "id": 3,
+          "attr": {
+            "style": {
+              "width": 117,
+              "backgroundColor": "#FF6600"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Brute force. Large numbers of failed logins on a single source within a small number of time",
+              "id": 6
+            },
+            "2": {
+              "title": "Hosts with the highest numbers of failed logins within a period of time, but sorted by username",
+              "id": 7
+            },
+            "3": {
+              "title": "Failed logins outside office hours",
+              "id": 8
+            },
+            "4": {
+              "title": "Check failure reasons. Example: 0xC0000072 account is currently disabled. ",
+              "id": 10
+            }
+          }
+        },
+        "2": {
+          "title": "EVENTID 4765 / 4766 – SID HISTORY ADDED TO AN ACCOUNT / FAILED",
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "Attacker often alter SID-HISTORY to escalate privileges and impersonate users",
+              "id": 15
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "3": {
+          "title": "Event ID1102 Event log cleared",
+          "id": 18,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "4": {
+          "title": "Event ID’s 4735, 4737, 4755 – SECURITY ENABLED GROUPS CHANGED",
+          "id": 21,
+          "ideas": {
+            "1": {
+              "title": "Hunt for admin/sensitive group membership changes",
+              "id": 22
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "5": {
+          "title": "Event ID 4648 – LOGON ATTEMPTED USING EXPLICIT CREDENTIALS",
+          "id": 25,
+          "ideas": {
+            "1": {
+              "title": "Typically when a logged on user provides different credentials to\naccess a resource. Requires filtering of “normal”.",
+              "id": 26
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "6": {
+          "title": "Event ID's 4698, 4702 Scheduled task creation/modification",
+          "id": 29,
+          "ideas": {
+            "1": {
+              "title": "Persistence",
+              "id": 32
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "7": {
+          "title": "Event ID 4720 – A LOCAL USER ACCOUNT WAS CREATED",
+          "id": 33,
+          "ideas": {
+            "1": {
+              "title": "Persistence",
+              "id": 34
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "8": {
+          "title": "Event ID 4780 - ACLs set on admin accounts",
+          "id": 38,
+          "ideas": {
+            "1": {
+              "title": "Generated after adding an account to DA or Administrators",
+              "id": 39
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "9": {
+          "title": "Event ID - 5136 A directory service object was modified",
+          "id": 43,
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "10": {
+          "title": "Event ID 4798 -  A user's local group membership was enumerated.",
+          "id": 47,
+          "ideas": {
+            "1": {
+              "title": "Potentially recon activity of local group\nmembership. Filter out normal activity.",
+              "id": 48
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-1": {
+          "title": "Event ID 4771 – FAILED KERBEROS PRE AUTHENTICATION",
+          "id": 11,
+          "ideas": {
+            "1": {
+              "title": "Check Result codes. Example:  0x18 Pre-authentication information was invalid (Usually means bad password) or 0x12 Clients credentials have been revoked Account disabled, expired, locked out, logon hours.",
+              "id": 12
+            },
+            "2": {
+              "title": "Hunt for spikes of events from a single pc",
+              "id": 13
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-2": {
+          "title": "Event ID 4794 – ATTEMPT MADE TO SET DSRM PASSWORD",
+          "id": 16,
+          "ideas": {
+            "1": {
+              "title": "If this isn’t expected, could be malicious.  set  DSRM == edit/access the AD database.",
+              "id": 17
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-3": {
+          "title": "Event ID’S 4793/643, 4713/617, 4719/612 – POLICY CHANGES\n\n",
+          "id": 19,
+          "ideas": {
+            "1": {
+              "title": "Policies should only be changed by approved users",
+              "id": 20
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-4": {
+          "title": "Event ID’S 4728, 4732, 4756 – USERS BEING ADDED TO SECURITY ENABLED GROUPS",
+          "id": 23,
+          "ideas": {
+            "1": {
+              "title": "Hunt for users that being added to admin/sensitive groups.",
+              "id": 24
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-5": {
+          "title": "Event ID 4697 – SERVICE INSTALLED",
+          "id": 27,
+          "ideas": {
+            "1": {
+              "title": "Attackers can install service for persistence",
+              "id": 28
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-6": {
+          "title": "Event ID 4672  – SPECIAL PRIVILEGES ASSIGNED TO NEW LOGON\n\n",
+          "id": 30,
+          "ideas": {
+            "1": {
+              "title": "Hunt for accounts that shouldn't have admin rights",
+              "id": 31
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-7": {
+          "title": "Event ID 4688 – PROCESS CREATED\n\n",
+          "id": 36,
+          "ideas": {
+            "1": {
+              "title": "Correlate with 4624(type 3 or 10) and hunt for susp processes(wmi/ps/rundll/sc/reg/netsh/etc)",
+              "id": 37
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-8": {
+          "title": "Event ID 4724 -  An attempt was made to reset an accounts password",
+          "id": 40,
+          "ideas": {
+            "1": {
+              "title": "Hunt for admin & sensitive account pw reset",
+              "id": 42
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        },
+        "-9": {
+          "title": "Event ID 4723 -  An attempt was made to change an account's password",
+          "id": 44,
+          "ideas": {
+            "1": {
+              "title": "Hunt for not approved/know pw change",
+              "id": 45
+            }
+          },
+          "attr": {
+            "style": {
+              "backgroundColor": "#FF6600"
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "Threat Hunting with  Security log"
+}
